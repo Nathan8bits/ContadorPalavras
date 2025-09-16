@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #fafafa;
+  }
+  
+  textarea,
+  button {
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 10px;
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background: #9ec3e6;
+    cursor: not-allowed;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    border-radius: 6px;
+  }
+  
+  /* Área onde o texto marcado aparece - preserva quebras e espaços */
+  .marcado {
+    margin-top: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+    white-space: pre-wrap; /* preserva quebras de linha e espaços */
+    word-break: break-word;
+    border-radius: 6px;
+  }
+  
+  /* "Marca-texto" para palavras conhecidas e desconhecidas */
+  .conhecida {
+    background-color: #c6f7c6; /* verde claro */
+    padding: 0 3px;
+    border-radius: 3px;
+    display: inline; /* não quebra o fluxo do texto */
+  }
+  
+  .nao-conhecida {
+    background-color: #ffd6d6; /* vermelho claro */
+    padding: 0 3px;
+    border-radius: 3px;
+    display: inline;
+  }
+  
