@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #fafafa;
+}
+
+textarea,
+button {
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #9ec3e6;
+  cursor: not-allowed;
+}
+
+#resultado {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+
+.marcado {
+  margin-top: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+  border-radius: 6px;
+}
+
+/* Marca-texto */
+.conhecida {
+  background-color: #c6f7c6; /* verde */
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+.ngl {
+  background-color: #a5d8ff; /* azul claro */
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+.nao-conhecida {
+  background-color: #ffd6d6; /* vermelho claro */
+  padding: 0 3px;
+  border-radius: 3px;
+}
+.legenda {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.legenda span {
+  padding: 0 5px;
+  border-radius: 3px;
+}
+.legenda .conhecida { background-color: #c6f7c6; }
+.legenda .ngl { background-color: #a5d8ff; }
+.legenda .nao-conhecida { background-color: #ffd6d6; }
+
+
+#listaDesconhecidas {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px dashed #777;
+  background: #fff;
+  border-radius: 6px;
+}
+#listaDesconhecidas span {
+  display: inline-block;
+  margin: 3px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+#listaDesconhecidas .nao-conhecida {
+  background: #ffcccc;
+}
+#listaDesconhecidas .ngl {
+  background: #cce5ff;
+}
+
